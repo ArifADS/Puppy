@@ -12,6 +12,7 @@
 		02FC3AD0202B19AB00476F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FC3ACE202B19AB00476F67 /* Main.storyboard */; };
 		02FC3AD2202B19AB00476F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FC3AD1202B19AB00476F67 /* Assets.xcassets */; };
 		02FC3AD5202B19AB00476F67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FC3AD3202B19AB00476F67 /* LaunchScreen.storyboard */; };
+		DF2C25D8CD4BE28898F9574F /* Pods_Puppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F143915C6BBDA9BB73DDE4D /* Pods_Puppy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		02FC3AD1202B19AB00476F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02FC3AD4202B19AB00476F67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02FC3AD6202B19AB00476F67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F143915C6BBDA9BB73DDE4D /* Pods_Puppy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puppy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BA9C461FAA5DAD2AF88AD8 /* Pods-Puppy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puppy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Puppy/Pods-Puppy.debug.xcconfig"; sourceTree = "<group>"; };
+		C5D770A561D99A7D2DF38181 /* Pods-Puppy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puppy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Puppy/Pods-Puppy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2C25D8CD4BE28898F9574F /* Pods_Puppy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				02FC3AC9202B19AB00476F67 /* Puppy */,
 				02FC3AC8202B19AB00476F67 /* Products */,
+				093ADC39E8E00A7D68A6B0D2 /* Pods */,
+				35FAF0B4AFB008EAB52682E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Puppy;
 			sourceTree = "<group>";
 		};
+		093ADC39E8E00A7D68A6B0D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80BA9C461FAA5DAD2AF88AD8 /* Pods-Puppy.debug.xcconfig */,
+				C5D770A561D99A7D2DF38181 /* Pods-Puppy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35FAF0B4AFB008EAB52682E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F143915C6BBDA9BB73DDE4D /* Pods_Puppy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02FC3AD9202B19AB00476F67 /* Build configuration list for PBXNativeTarget "Puppy" */;
 			buildPhases = (
+				34E6FB5B11DD1185EF75FD50 /* [CP] Check Pods Manifest.lock */,
 				02FC3AC3202B19AB00476F67 /* Sources */,
 				02FC3AC4202B19AB00476F67 /* Frameworks */,
 				02FC3AC5202B19AB00476F67 /* Resources */,
+				9D8D0E9981A88DC949693C8F /* [CP] Embed Pods Frameworks */,
+				136850EB1EA65E2F72A3BF54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		136850EB1EA65E2F72A3BF54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puppy/Pods-Puppy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34E6FB5B11DD1185EF75FD50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Puppy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D8D0E9981A88DC949693C8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Puppy/Pods-Puppy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puppy/Pods-Puppy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02FC3AC3202B19AB00476F67 /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		02FC3ADA202B19AB00476F67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BA9C461FAA5DAD2AF88AD8 /* Pods-Puppy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +370,7 @@
 		};
 		02FC3ADB202B19AB00476F67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D770A561D99A7D2DF38181 /* Pods-Puppy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
