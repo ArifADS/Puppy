@@ -44,8 +44,8 @@ class ResultCell: UITableViewCell {
         
         API.downloadImage(href: model.thumbnail)
         .then{ data -> Void in
-            print(self.model.thumbnail)
             self.thumbnailImageView.image = UIImage(data: data)
         }
+        .catch{e in }
     }
 }
