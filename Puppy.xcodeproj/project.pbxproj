@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02788D3E202B1E800076CE8B /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02788D3D202B1E800076CE8B /* ResultCell.swift */; };
+		02788D40202B1EE00076CE8B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02788D3F202B1EE00076CE8B /* API.swift */; };
+		02788D42202B201C0076CE8B /* QueryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02788D41202B201C0076CE8B /* QueryResult.swift */; };
+		02788D44202B20850076CE8B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02788D43202B20850076CE8B /* Response.swift */; };
 		02FC3ACB202B19AB00476F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC3ACA202B19AB00476F67 /* AppDelegate.swift */; };
 		02FC3ACD202B19AB00476F67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC3ACC202B19AB00476F67 /* ViewController.swift */; };
 		02FC3AD0202B19AB00476F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FC3ACE202B19AB00476F67 /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02788D3D202B1E800076CE8B /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		02788D3F202B1EE00076CE8B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		02788D41202B201C0076CE8B /* QueryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResult.swift; sourceTree = "<group>"; };
+		02788D43202B20850076CE8B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		02FC3AC7202B19AB00476F67 /* Puppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FC3ACA202B19AB00476F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02FC3ACC202B19AB00476F67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +48,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02788D39202B1DF80076CE8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02788D41202B201C0076CE8B /* QueryResult.swift */,
+				02788D43202B20850076CE8B /* Response.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02788D3A202B1E010076CE8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02788D3D202B1E800076CE8B /* ResultCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02788D3B202B1E070076CE8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02FC3ACC202B19AB00476F67 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02788D3C202B1E2C0076CE8B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				02FC3ACE202B19AB00476F67 /* Main.storyboard */,
+				02FC3AD3202B19AB00476F67 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		02FC3ABE202B19AB00476F67 = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				02FC3ACA202B19AB00476F67 /* AppDelegate.swift */,
-				02FC3ACC202B19AB00476F67 /* ViewController.swift */,
-				02FC3ACE202B19AB00476F67 /* Main.storyboard */,
+				02788D3F202B1EE00076CE8B /* API.swift */,
+				02788D3C202B1E2C0076CE8B /* UI */,
+				02788D39202B1DF80076CE8B /* Model */,
+				02788D3A202B1E010076CE8B /* View */,
+				02788D3B202B1E070076CE8B /* Controller */,
 				02FC3AD1202B19AB00476F67 /* Assets.xcassets */,
-				02FC3AD3202B19AB00476F67 /* LaunchScreen.storyboard */,
 				02FC3AD6202B19AB00476F67 /* Info.plist */,
 			);
 			path = Puppy;
@@ -219,8 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02788D42202B201C0076CE8B /* QueryResult.swift in Sources */,
 				02FC3ACD202B19AB00476F67 /* ViewController.swift in Sources */,
 				02FC3ACB202B19AB00476F67 /* AppDelegate.swift in Sources */,
+				02788D40202B1EE00076CE8B /* API.swift in Sources */,
+				02788D44202B20850076CE8B /* Response.swift in Sources */,
+				02788D3E202B1E800076CE8B /* ResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72GHU78G63;
 				INFOPLIST_FILE = Puppy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.arifads.Puppy;
@@ -374,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72GHU78G63;
 				INFOPLIST_FILE = Puppy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.arifads.Puppy;
